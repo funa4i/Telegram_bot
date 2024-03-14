@@ -13,6 +13,7 @@ from common.botcom import private_commands
 load_dotenv(find_dotenv())
 
 ALLOWED_UPDATES = ['message', 'edited_message']
+ADMINS_ID = os.getenv("ADMIN_IDES")
 
 bot = Bot(token=os.getenv('TOKEN'), parse_mode="HTML")
 dp = Dispatcher()
